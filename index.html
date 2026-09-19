@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique by Vik | Custom Dress Design</title>
+    <link rel="stylesheet" href="styler.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Branding -->
+    <header class="site-header">
+        <div class="profile-info">
+            <img id="avatar" src="IconImgRke.png" alt="Unique by Vik Logo">
+            <h1 id="user-name">Unique by Vik</h1>
+            <p class="brand-subtitle">CUSTOM DRESS DESIGN</p>
+        </div>
+        <p id="user-bio">For the woman who refuses to wear an ordinary gown. Handcrafted in Canada • Made to your measurements.</p>
+        <span class="location-tag">📍 Rosetown, SK • Serving clients across Canada</span>
+    </header>
+
+    <!-- Social Media & Quick Links (Optimized for Instagram / TikTok / Facebook Bio) -->
+    <nav class="links-section">
+        <ul id="social-links-list">
+            <li>
+                <a href="#inquiry-section" class="btn-highlight">
+                    ✨ Book Private Discovery Call
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                    📷 Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                    👤 Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener">
+                    🎵 TikTok
+                </a>
+            </li>
+            <li>
+                <a href="tel:13066179069">
+                    📞 Call / Text (1-306-617-9069)
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Showcase Carousel -->
+    <main class="feature-card">
+        <h2 class="section-heading">Bespoke Portfolio</h2>
+        <div class="carousel">
+            <button class="arrow" id="prev-btn" aria-label="Previous">&#10094;</button>
+            <div class="slide-display">
+                <img id="carousel-img" src="Images/HeaderImg.png" alt="Custom Gown Showcase">
+                <p id="carousel-caption">One-of-a-Kind Custom Bridal & Event Gowns</p>
+            </div>
+            <button class="arrow" id="next-btn" aria-label="Next">&#10095;</button>
+        </div>
+    </main>
+
+    <!-- Services & Pricing Overview -->
+    <section class="feature-card" id="services-section">
+        <h2 class="section-heading">Custom Gown Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Bridal Couture</h3>
+                <p>Private custom wedding gown experiences starting from $6,000 CAD.</p>
+            </div>
+            <div class="service-item">
+                <h3>Gala & Red-Carpet</h3>
+                <p>Distinctive statement gowns made to measure. Starting at $2,000 CAD.</p>
+            </div>
+            <div class="service-item">
+                <h3>Graduation Gowns</h3>
+                <p>One-of-a-kind milestone gowns. Starting at $2,000 CAD.</p>
+            </div>
+            <div class="service-item">
+                <h3>Pageant & Special Occasions</h3>
+                <p>Original designs created for presence, movement, and individuality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation & Lead Form -->
+    <section class="feature-card" id="inquiry-section">
+        <h2 class="section-heading">Begin Your Gown Conversation</h2>
+        <p class="form-intro">Share details about your upcoming event to reserve your private consultation with Viktoriia Kuzmych.</p>
+        
+        <form class="inquiry-form" action="https://formspree.io/f/uniquebyvik.designer@gmail.com" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name *" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address *" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" placeholder="Phone Number *" required>
+            </div>
+            <div class="form-group">
+                <select name="occasion" required>
+                    <option value="" disabled selected>Select Occasion *</option>
+                    <option value="Bridal">Bridal Gown</option>
+                    <option value="Gala">Gala / Red-Carpet</option>
+                    <option value="Graduation">Graduation Gown</option>
+
+                    <option value="Pageant">Pageant / National Costume</option>
+                    <option value="Other">Other Custom Design</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" name="event_date" placeholder="Event Date (MM/DD/YYYY) *" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="location" placeholder="City & Province *" required>
+            </div>
+            <div class="form-group">
+                <select name="investment_range">
+                    <option value="" disabled selected>Investment Guidance (CAD)</option>
+                    <option value="$2,000 - $3,500">$2,000 – $3,500 CAD</option>
+                    <option value="$3,500 - $6,500">$3,500 – $6,500 CAD</option>
+                    <option value="$6,500+">$6,500 CAD and above</option>
+                    <option value="Guidance Needed">I would appreciate guidance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea name="gown_description" rows="4" placeholder="Briefly describe your dream gown, vision, or ideas..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit Gown Inquiry</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <h3>Contact Unique by Vik</h3>
+        <p>Email: <a href="mailto:uniquebyvik.designer@gmail.com">uniquebyvik.designer@gmail.com</a></p>
+        <p>Phone: <a href="tel:13066179069">1-306-617-9069</a></p>
+        <p class="copyright">&copy; Unique by Vik Custom Dress Design. All rights reserved.</p>
+    </footer>
+
+    <!-- Dynamic JavaScript -->
+    <script>
+        const CONFIG = {
+            gallery: [
+                { src: "Images/HeaderImg.png", caption: "Bespoke Couture Evening Gown" },
+                { src: "IconImgRke.png", caption: "Unique by Vik Signature Atelier" }
+            ]
+        };
+
+        // Carousel Logic
+        let currentIndex = 0;
+        const imgEl = document.getElementById('carousel-img');
+        const captionEl = document.getElementById('carousel-caption');
+
+        function updateCarousel(index) {
+            if (!CONFIG.gallery || CONFIG.gallery.length === 0) return;
+            imgEl.src = CONFIG.gallery[index].src;
+            captionEl.textContent = CONFIG.gallery[index].caption;
+        }
+
+        document.getElementById('prev-btn').onclick = () => {
+            currentIndex = (currentIndex - 1 + CONFIG.gallery.length) % CONFIG.gallery.length;
+            updateCarousel(currentIndex);
+        };
+
+        document.getElementById('next-btn').onclick = () => {
+            currentIndex = (currentIndex + 1) % CONFIG.gallery.length;
+            updateCarousel(currentIndex);
+        };
+
+        updateCarousel(currentIndex);
+    </script>
+</body>
+</html>
