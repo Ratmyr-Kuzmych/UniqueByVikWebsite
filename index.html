@@ -7,51 +7,52 @@
     <link rel="stylesheet" href="styler.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header / Branding -->
     <header class="site-header">
         <div class="profile-info">
-            <img id="avatar" src="IconImgRke.png" alt="Unique by Vik Logo">
+            <!-- Using a chic editorial fabric/sewing asset for the avatar -->
+            <img id="avatar" src="https://images.unsplash.com/photo-1584030373081-f37b7bb4fa8e?auto=format&fit=crop&w=200&q=80" alt="Unique by Vik Logo">
             <h1 id="user-name">Unique by Vik</h1>
             <p class="brand-subtitle">CUSTOM DRESS DESIGN</p>
         </div>
         <p id="user-bio">For the woman who refuses to wear an ordinary gown. Handcrafted in Canada • Made to your measurements.</p>
-        <span class="location-tag">📍 Rosetown, SK • Serving clients across Canada</span>
+        <span class="location-tag">Rosetown, SK • Serving clients across Canada</span>
     </header>
 
-    <!-- Social Media & Quick Links (Optimized for Instagram / TikTok / Facebook Bio) -->
-    <nav class="links-section">
-        <ul id="social-links-list">
-            <li>
-                <a href="#inquiry-section" class="btn-highlight">
-                    ✨ Book Private Discovery Call
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                    📷 Instagram
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                    👤 Facebook
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com" target="_blank" rel="noopener">
-                    🎵 TikTok
-                </a>
-            </li>
-            <li>
-                <a href="tel:13066179069">
-                    📞 Call / Text (1-306-617-9069)
-                </a>
-            </li>
-        </ul>
-    </nav>
+   <!-- Social Media & Quick Links -->
+   <nav class="links-section">
+    <ul id="social-links-list">
+        <li>
+            <a href="#inquiry-section" class="btn-highlight">
+                Book Private Discovery Call
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/custom_bridal_prom_designer/" target="_blank" rel="noopener">
+                <img src="Images/instagram.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/people/Unique-by-Vik-designer/100054426193660/" target="_blank" rel="noopener">
+                <img src="Images/facebook-logo.png" alt="Facebook" class="social-icon"> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/@uniquebyvik.designer" target="_blank" rel="noopener">
+                <img src="Images/tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
+            </a>
+        </li>
+        <li>
+            <a href="tel:13066179069">
+                Call or Text: 1-306-617-9069
+            </a>
+        </li>
+    </ul>
+</nav>
 
     <!-- Portfolio Showcase Carousel -->
     <main class="feature-card">
@@ -59,8 +60,8 @@
         <div class="carousel">
             <button class="arrow" id="prev-btn" aria-label="Previous">&#10094;</button>
             <div class="slide-display">
-                <img id="carousel-img" src="Images/HeaderImg.png" alt="Custom Gown Showcase">
-                <p id="carousel-caption">One-of-a-Kind Custom Bridal & Event Gowns</p>
+                <img id="carousel-img" src="" alt="Custom Gown Showcase">
+                <p id="carousel-caption"></p>
             </div>
             <button class="arrow" id="next-btn" aria-label="Next">&#10095;</button>
         </div>
@@ -110,7 +111,6 @@
                     <option value="Bridal">Bridal Gown</option>
                     <option value="Gala">Gala / Red-Carpet</option>
                     <option value="Graduation">Graduation Gown</option>
-
                     <option value="Pageant">Pageant / National Costume</option>
                     <option value="Other">Other Custom Design</option>
                 </select>
@@ -148,9 +148,11 @@
     <!-- Dynamic JavaScript -->
     <script>
         const CONFIG = {
+            // Using premium royalty-free images from Unsplash
             gallery: [
-                { src: "Images/HeaderImg.png", caption: "Bespoke Couture Evening Gown" },
-                { src: "IconImgRke.png", caption: "Unique by Vik Signature Atelier" }
+                { src: "https://images.unsplash.com/photo-1594552072238-185fd94b34b1?auto=format&fit=crop&w=800&q=80", caption: "Bespoke Bridal Couture" },
+                { src: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80", caption: "Handcrafted in the Atelier" },
+                { src: "https://images.unsplash.com/photo-1566164284560-64215904fc4e?auto=format&fit=crop&w=800&q=80", caption: "Elegant Evening & Gala Gowns" }
             ]
         };
 
