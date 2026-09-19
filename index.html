@@ -154,37 +154,36 @@
 
     <!-- Dynamic JavaScript -->
     <script>
-        const CONFIG = {
-            // Using premium royalty-free images from Unsplash
-            gallery: [
-                { src: "https://images.unsplash.com/photo-1594552072238-185fd94b34b1?auto=format&fit=crop&w=800&q=80", caption: "Bespoke Bridal Couture" },
-                { src: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80", caption: "Handcrafted in the Atelier" },
-                { src: "https://images.unsplash.com/photo-1566164284560-64215904fc4e?auto=format&fit=crop&w=800&q=80", caption: "Elegant Evening & Gala Gowns" }
-            ]
-        };
-
-        // Carousel Logic
+        // Grab all the images inside the slide-display div
+        const slides = document.querySelectorAll('.slide-display img');
         let currentIndex = 0;
-        const imgEl = document.getElementById('carousel-img');
-        const captionEl = document.getElementById('carousel-caption');
 
-        function updateCarousel(index) {
-            if (!CONFIG.gallery || CONFIG.gallery.length === 0) return;
-            imgEl.src = CONFIG.gallery[index].src;
-            captionEl.textContent = CONFIG.gallery[index].caption;
+        // Function to show only the current slide
+        function showSlide(index) {
+            // First, hide all images by removing the 'active' class
+            slides.forEach(slide => slide.classList.remove('active'));
+            // Then, show the targeted image
+            if (slides[index]) {
+                slides[index].classList.add('active');
+            }
         }
 
+        // Previous Button Click
         document.getElementById('prev-btn').onclick = () => {
-            currentIndex = (currentIndex - 1 + CONFIG.gallery.length) % CONFIG.gallery.length;
-            updateCarousel(currentIndex);
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
         };
 
+        // Next Button Click
         document.getElementById('next-btn').onclick = () => {
-            currentIndex = (currentIndex + 1) % CONFIG.gallery.length;
-            updateCarousel(currentIndex);
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
         };
 
-        updateCarousel(currentIndex);
+        // Initialize the carousel by showing the first image on page load
+        if (slides.length > 0) {
+            showSlide(0);
+        }
     </script>
 </body>
 </html>
