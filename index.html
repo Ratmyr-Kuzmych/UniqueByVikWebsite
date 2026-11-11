@@ -3,106 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(Unique by Vik | Custom Dress Design)-(Under Construction)</title>
+    <title>Unique by Vik | Custom Dress Design</title>
     
-    <!-- Add your icon here -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="icon" type="image/png" href="uniqueByVik.png">
-    
     <link rel="stylesheet" href="styler.css">
-    <!-- ... other links ... -->
 </head>
 <body>
 
-    <!-- Header / Branding -->
-    <header class="site-header">
-        <div class="profile-info">
-            <!-- Using a chic editorial fabric/sewing asset for the avatar -->
-            <img id="avatar" src="uniqueByVik.png" alt="Unique by Vik Logo">
-            <h1 id="user-name">Unique by Vik</h1>
-            <p class="brand-subtitle">(CUSTOM DRESS DESIGN)-(Under Construction)</p>
+    <!-- 1. MAIN IMAGE FIRST (Carousel Slides) -->
+    <section class="card main-carousel-card">
+        <div class="carousel">
+            
+                <img src="Images/VIKDS.png" alt="Carousel Slide 1" class="carousel-img active">
+
         </div>
-        <p id="user-bio">For the woman who refuses to wear an ordinary gown. Handcrafted in Canada • Made to your measurements.</p>
-        <span class="location-tag">Rosetown, SK • Serving clients across Canada</span>
+    </section>
+
+    <!-- 2. UNIQUE BY VIK CUSTOM DRESS DESIGN & TEXT -->
+    <header class="card header-card">
+      <!--  <img id="avatar" src="uniqueByVik.png" alt="Unique by Vik Logo"> -->
+        <h1>Unique by Vik Custom Dress Design</h1>
+        <p class="tagline">"In custom dress from Unique by Vik you will feel absolutely original, comfortable, precisely fitted and never repeated."</p>
+        <p class="bio-text">Every design begins with a personal conversation, then develops through sketching, measurements, private fittings, and careful craftsmanship.</p>
+        <p class="bio-text">Your gown should feel unmistakably yours. From the first idea to the final fitting, every decision is made with your body, your comfort, and your vision in mind.</p>
     </header>
 
-   <!-- Social Media & Quick Links -->
-   <nav class="links-section">
-    <ul id="social-links-list">
-        <li>
-            <a href="#inquiry-section" class="btn-highlight">
-                Book Private Discovery Call
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/custom_bridal_prom_designer/" target="_blank" rel="noopener">
-                <img src="Images/instagram.png" alt="Instagram" class="social-icon"> Instagram
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/people/Unique-by-Vik-designer/100054426193660/" target="_blank" rel="noopener">
-                <img src="Images/facebook-logo.png" alt="Facebook" class="social-icon"> Facebook
-            </a>
-        </li>
-        <li>
-            <a href="https://www.tiktok.com/@uniquebyvik.designer" target="_blank" rel="noopener">
-                <img src="Images/tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
-            </a>
-        </li>
-        <li>
-            <a href="tel:13066179069">
-                Call or Text: 1-306-617-9069
-            </a>
-        </li>
-    </ul>
-</nav>
-
-    <!-- Portfolio Showcase Carousel -->
-    <main class="feature-card">
-        <h2 class="section-heading">Bespoke Portfolio</h2>
+    <!-- 3. COUTURE PROCESS DIFFERENCE & IMAGES -->
+    <section class="card">
+        <h2 class="section-title">Couture process difference</h2>
         <div class="carousel">
             <button class="arrow" id="prev-btn" aria-label="Previous">&#10094;</button>
             <div class="slide-display">
-                <img src="Images/Grad_page-0001.jpg" alt="Page 1">
-                <img src="Images/Grad_page-0002.jpg" alt="Page 2">
-                <img src="Images/Grad_page-0003.jpg" alt="Page 3">
-                <img src="Images/Grad_page-0004.jpg" alt="Page 4">
-                <img src="Images/Grad_page-0005.jpg" alt="Page 5">
-                <img src="Images/Grad_page-0006.jpg" alt="Page 6">
-                <img src="Images/Grad_page-0007.jpg" alt="Page 7">
+                <img src="Images/Slide 1.png" alt="Carousel Slide 1" class="carousel-img active">
+                <img src="Images/Slide 2.png" alt="Carousel Slide 2" class="carousel-img">
+                <img src="Images/Slide 3.png" alt="Carousel Slide 3" class="carousel-img">
+                <img src="Images/Slide 4.png" alt="Carousel Slide 4" class="carousel-img">
+                <img src="Images/Slide 5.png" alt="Carousel Slide 5" class="carousel-img">
+                <p id="carousel-caption">Slide 1 of 5</p>
             </div>
             <button class="arrow" id="next-btn" aria-label="Next">&#10095;</button>
         </div>
-    </main>
+        <p class="section-subtitle">For the woman who refuses to wear an ordinary gown.</p>
+    </section>
 
-    <!-- Services & Pricing Overview -->
-    <section class="feature-card" id="services-section">
-        <h2 class="section-heading">Custom Gown Services</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Bridal Couture</h3>
-                <p>Private custom wedding gown experiences starting from $6,000 CAD.</p>
+    <!-- 4. YOUR TIME, YOUR VISION & QUALITIES -->
+    <section class="card">
+        <h2 class="section-title">Your time matters. Your vision matters.</h2>
+        <p class="section-desc">The right custom process can save time and reduce uncertainty. Instead of spending months searching and settling for a gown that almost feels right, you receive expert guidance toward a design made for you.</p>
+        
+        <div class="qualities-grid">
+            <div class="quality-box">
+                <h3>Feel Comfortable.</h3>
+                <p>Support, movement, and fit are considered from the beginning.</p>
             </div>
-            <div class="service-item">
-                <h3>Gala & Red-Carpet</h3>
-                <p>Distinctive statement gowns made to measure. Starting at $2,000 CAD.</p>
-            </div>
-            <div class="service-item">
-                <h3>Graduation Gowns</h3>
-                <p>One-of-a-kind milestone gowns. Starting at $2,000 CAD.</p>
-            </div>
-            <div class="service-item">
-                <h3>Pageant & Special Occasions</h3>
-                <p>Original designs created for presence, movement, and individuality.</p>
+            <div class="quality-box">
+                <h3>Feel Certain.</h3>
+                <p>A clear, personal process brings confidence, individuality, and a calmer preparation experience.</p>
             </div>
         </div>
     </section>
 
-    <!-- Consultation & Lead Form -->
-    <section class="feature-card" id="inquiry-section">
-        <h2 class="section-heading">Begin Your Gown Conversation</h2>
-        <p class="form-intro">Share details about your upcoming event to reserve your private consultation with Viktoriia Kuzmych.</p>
+    <!-- 6. TIMING AND TRAVEL -->
+    <section class="card">
+        <h2 class="section-title">Timing and Travel</h2>
+        <p class="section-desc">Ideally, brides contact Unique by Vik <strong>6–12 months before their wedding</strong>. Earlier is welcome, and shorter-notice inquiries can still be discussed during the discovery call.</p>
+        <p class="section-desc location-highlight">Based in Rosetown, Saskatchewan, serving customers across Canada, with travel arranged when needed.</p>
+    </section>
+
+    <!-- 7. DISCOVERY CALL & STEP-BY-STEP PROCESS -->
+    <section class="card">
+        <h2 class="section-title">Your Custom Gown Design Process</h2>
+        <p class="section-subtitle">From your first idea to a gown created especially for you</p>
+        <p class="section-desc">Your gown is designed around your vision, your figure, your personality, your event, and the way you want to feel.</p>
         
-        <form class="inquiry-form" action="https://formspree.io/f/uniquebyvik.designer@gmail.com" method="POST">
+        <div class="process-steps-list">
+            <div class="step-item">
+                <h3>1. Private Discovery Call</h3>
+                <p>We begin with a friendly conversation about your event, date, location, style, and vision. You can share your ideas, inspiration, preferred fabrics, and the feeling you want your gown to create. Together, we discuss the design, fit, comfort, support, timeline, and investment. During this call, I usually create an initial sketch based on your description and desired details. We then discuss the next steps and arrange your in-person appointment.</p>
+            </div>
+            <div class="step-item">
+                <h3>2. In-Person Design and Measurement Appointment</h3>
+                <p>At our in-person appointment, we review and finalize your sketch together. We confirm the silhouette, fabric, colour, details, construction, comfort, and support. If fabric samples are available, we review them together and make any final design changes needed. We take approximately 50 measurements to create a pattern designed specifically for your figure. When needed, additional measurements may be taken for custom-built cups and corsetry. We also review the timeline and contract. The 50% deposit is usually paid at this appointment.</p>
+            </div>
+            <div class="step-item">
+                <h3>3. Your Gown Is Created</h3>
+                <p>Once your design and measurements are confirmed, I begin creating your gown. I craft your pattern, prepare or order the fabric, and carefully construct your gown by hand. Every detail is created specifically for you. Your gown is not copied or mass-produced. During the creative process, I can share photographs or videos of your gown if you would like updates. If an important design decision needs to be confirmed, I will contact you before continuing.</p>
+            </div>
+            <div class="step-item">
+                <h3>4. Fitting and Final Refinements</h3>
+                <p>When your gown is ready, you try it on in person so we can check the fit, comfort, support, length, movement, and overall look. Depending on the design, more than one fitting may be needed. I always aim to keep the process as simple as possible, and many gowns can be completed with one main fitting. If adjustments are needed, I make the refinements and schedule another fitting when appropriate. Once your gown is finished and you are happy with the result, we arrange delivery. The remaining 50% balance, plus applicable taxes, is due upon delivery of the finished gown.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8 & 9. PRIVATE INFO FOR CONTACT & HOW YOU WANT TO KEEP IN TOUCH -->
+    <section class="card" id="inquiry-section">
+        <h2 class="section-title">Begin your private gown conversation.</h2>
+        <p class="section-desc">Each inquiry is reviewed personally. Share a few details about your occasion and vision so the conversation can begin with care and clarity.</p>
+        
+        <form class="inquiry-form" action="https://formspree.io/f/uniquebyvik.designer@gmail.com" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" name="name" placeholder="Full Name *" required>
             </div>
@@ -119,6 +123,7 @@
                     <option value="Gala">Gala / Red-Carpet</option>
                     <option value="Graduation">Graduation Gown</option>
                     <option value="Pageant">Pageant / National Costume</option>
+                    <option value="Flower Girl">Flower-Girl Gown</option>
                     <option value="Other">Other Custom Design</option>
                 </select>
             </div>
@@ -129,58 +134,167 @@
                 <input type="text" name="location" placeholder="City & Province *" required>
             </div>
             <div class="form-group">
-                <select name="investment_range">
-                    <option value="" disabled selected>Investment Guidance (CAD)</option>
-                    <option value="$2,000 - $3,500">$2,000 – $3,500 CAD</option>
-                    <option value="$3,500 - $6,500">$3,500 – $6,500 CAD</option>
-                    <option value="$6,500+">$6,500 CAD and above</option>
-                    <option value="Guidance Needed">I would appreciate guidance</option>
+                <textarea name="gown_description" rows="3" placeholder="Brief description of the gown desired..."></textarea>
+            </div>
+            
+            <!-- How you want to keep in touch -->
+            <div class="form-group">
+                <label for="preferred_contact">How do you want to keep in touch after inquiry?</label>
+                <select id="preferred_contact" name="preferred_contact" required>
+                    <option value="" disabled selected>Select preferred contact method *</option>
+                    <option value="Phone Call">Phone Call</option>
+                    <option value="Text Message">Text Message</option>
+                    <option value="Email">Email</option>
                 </select>
             </div>
-            <div class="form-group">
-                <textarea name="gown_description" rows="4" placeholder="Briefly describe your dream gown, vision, or ideas..."></textarea>
+            
+            <div class="form-group file-group">
+                <label for="inspiration">Inspiration Images (Optional):</label>
+                <input type="file" id="inspiration" name="inspiration_files" multiple accept="image/*">
             </div>
+            
+            <div class="form-group">
+                <textarea name="additional_info" rows="3" placeholder="Additional info or notes..."></textarea>
+            </div>
+
             <button type="submit" class="btn-submit">Submit Gown Inquiry</button>
         </form>
     </section>
 
+    <!-- CONTACT & RECOGNITION -->
+    <section class="card">
+        <h2 class="section-title">Contact & Recognition</h2>
+        <div class="contact-info-block">
+            <p><strong>Unique by Vik Custom Dress Design</strong></p>
+            <p>Rosetown, Saskatchewan, Canada</p>
+            <p>Serving clients across Canada</p>
+            <p>Email: <a href="mailto:uniquebyvik.designer@gmail.com">uniquebyvik.designer@gmail.com</a></p>
+            <p>Phone: <a href="tel:13066179069">1-306-617-9069</a></p>
+        </div>
+
+        <div class="recognition-box">
+            <h3>Recognition and Experience</h3>
+            <ul class="recognition-list">
+                <li>Finalist for the Saskatchewan Wedding Industry Award.</li>
+                <li>Finalist for the SaskFashion Woman's Day Award.</li>
+                <li>SASK Fashion Member.</li>
+                <li>Participation in presentation connected with the National Women's Show and with Fashion.</li>
+                <li>Toronto Kids Fashion Week.</li>
+                <li>Fashion week experience in Vancouver, Calgary, Edmonton, Toronto, Montreal, and Saskatoon.</li>
+                <li>Participation in the Moix Immigrant Bridal Show.</li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- 5. 3 COLUMNS OF PACKAGES / OCCASIONS & APPROXIMATED PRICES -->
+        <section class="card" id="packages-section">
+            <h2 class="section-title">Choose the bridal experience that feels right for you.</h2>
+            <p class="price-disclaimer">* All prices are approximated, overage and more accurate price will be calculated individually.</p>
+            
+            <div class="packages-grid-3col">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <h3>Package 1</h3>
+                    <span class="package-subtitle">A Gown Dress, Just As You Want</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Designed back or front, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>BONUS: Custom designed veil</li>
+                    </ul>
+                    <div class="package-price"><strong>$6,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 1</a>
+                </div>
+    
+                <!-- Package 2 -->
+                <div class="package-card popular-package">
+                    <h3>Package 2</h3>
+                    <span class="package-subtitle">Complete Bridal Everything You Need</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Neck collar style or bustier, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>Custom designed veil</li>
+                        <li>Bridal gown or coat</li>
+                        <li>Flower crown or gloves</li>
+                        <li>BONUS: Flower-girl dress</li>
+                    </ul>
+                    <div class="package-price"><strong>$12,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 2</a>
+                </div>
+    
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <h3>Package 3</h3>
+                    <span class="package-subtitle">All Inclusive: All Bride Suit Dresses</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Corset/mesh back or bustier, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>Custom designed veil</li>
+                        <li>Bridal gown or coat</li>
+                        <li>Flower crown or gloves</li>
+                        <li>Historical dress or cape</li>
+                        <li>Ties or historical belts</li>
+                        <li>Boleros or faux fur cape</li>
+                        <li>Woman of the groom dress</li>
+                    </ul>
+                    <div class="package-price"><strong>$20,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 3</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+    <!-- 10. SOCIAL LINKS IN A SINGLE ROW BOX -->
+    <section class="card socials-box">
+        <h3 class="socials-title">Socials</h3>
+        <div class="socials-row">
+            <a href="https://www.instagram.com/custom_bridal_prom_designer/" target="_blank" rel="noopener">
+                <img src="Images/instagram.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://www.facebook.com/people/Unique-by-Vik-designer/100054426193660/" target="_blank" rel="noopener">
+                <img src="Images/facebook-logo.png" alt="Facebook" class="social-icon"> Facebook
+            </a>
+            <a href="https://www.tiktok.com/@uniquebyvik.designer" target="_blank" rel="noopener">
+                <img src="Images/tiktoklogo.png" alt="TikTok" class="social-icon"> TikTok
+            </a>
+            <a href="tel:13066179069">
+                Call / Text
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="site-footer">
-        <h3>Contact Unique by Vik</h3>
-        <p>Email: <a href="mailto:uniquebyvik.designer@gmail.com">uniquebyvik.designer@gmail.com</a></p>
-        <p>Phone: <a href="tel:13066179069">1-306-617-9069</a></p>
-        <p class="copyright">&copy; Unique by Vik Custom Dress Design. All rights reserved.</p>
+        <p>&copy; Unique by Vik Custom Dress Design. All rights reserved.</p>
     </footer>
 
-    <!-- Dynamic JavaScript -->
+    <!-- Dynamic JavaScript for Carousel -->
     <script>
-        // Grab all the images inside the slide-display div
-        const slides = document.querySelectorAll('.slide-display img');
+        const slides = document.querySelectorAll('.slide-display .carousel-img');
+        const caption = document.getElementById('carousel-caption');
         let currentIndex = 0;
 
-        // Function to show only the current slide
         function showSlide(index) {
-            // First, hide all images by removing the 'active' class
             slides.forEach(slide => slide.classList.remove('active'));
-            // Then, show the targeted image
             if (slides[index]) {
                 slides[index].classList.add('active');
+                caption.textContent = `Slide ${index + 1} of ${slides.length}`;
             }
         }
 
-        // Previous Button Click
         document.getElementById('prev-btn').onclick = () => {
             currentIndex = (currentIndex - 1 + slides.length) % slides.length;
             showSlide(currentIndex);
         };
 
-        // Next Button Click
         document.getElementById('next-btn').onclick = () => {
             currentIndex = (currentIndex + 1) % slides.length;
             showSlide(currentIndex);
         };
 
-        // Initialize the carousel by showing the first image on page load
         if (slides.length > 0) {
             showSlide(0);
         }
