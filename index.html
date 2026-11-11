@@ -30,7 +30,7 @@
         <p class="bio-text">Your gown should feel unmistakably yours. From the first idea to the final fitting, every decision is made with your body, your comfort, and your vision in mind.</p>
     </header>
 
-    <!-- 3. COUTURE PROCESS DIFFERENCE & IMAGES (Independent Loop) -->
+    <!-- 3. COUTURE PROCESS DIFFERENCE & IMAGES (Independent Loop with Both Arrows) -->
     <section class="card">
         <h2 class="section-title">Couture process difference</h2>
         <div class="carousel">
@@ -43,6 +43,7 @@
                 <img src="Images/Slide 5.png" alt="Couture Finishing" class="carousel-img lightbox-process">
                 <p id="carousel-caption">Slide 1 of 5</p>
             </div>
+            <button class="arrow" id="next-btn" aria-label="Next">&#10095;</button>
         </div>
         <p class="section-subtitle">For the woman who refuses to wear an ordinary gown.</p>
     </section>
@@ -97,34 +98,43 @@
         </div>
     </section>
 
-    <!-- 7. PHOTO LIBRARY WITH CATEGORIES (Bridal, Grad, simsdress) -->
-    <section class="card">
+    <!-- 7. PHOTO LIBRARY WITH CATEGORIES (Hidden until clicked/unlocked) -->
+    <section class="card" id="portfolio-section">
         <h2 class="section-title">Design Photo Library</h2>
         <p class="section-subtitle">Explore our previous custom creations by category</p>
         
-        <div class="category-tabs">
-            <button class="category-tab-btn active" data-category="bridal">Bridal</button>
-            <button class="category-tab-btn" data-category="grad">Grad</button>
-            <button class="category-tab-btn" data-category="simsdress">Sims Dress</button>
+        <!-- Initial Click Prompt (Hidden once clicked) -->
+        <div id="portfolio-reveal-wrapper" class="portfolio-reveal-wrapper">
+            <p class="section-desc" style="text-align: center; margin-bottom: 1.5rem;">Click below to load and view our custom bridal, grad, and dress galleries.</p>
+            <button class="btn-toggle-packages" id="reveal-portfolio-btn">View Photo Library</button>
         </div>
 
-        <!-- Bridal Gallery -->
-        <div class="category-gallery active" id="gallery-bridal">
-            <img src="Images/Bridal/bridal1.png" alt="Bridal Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
-            <img src="Images/Bridal/bridal2.png" alt="Bridal Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 2.png'">
-            <img src="Images/Bridal/bridal3.png" alt="Bridal Gown 3" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 3.png'">
-        </div>
+        <!-- Hidden Portfolio Content Container -->
+        <div id="portfolio-content" class="portfolio-content-hidden">
+            <div class="category-tabs">
+                <button class="category-tab-btn active" data-category="bridal">Bridal</button>
+                <button class="category-tab-btn" data-category="grad">Grad</button>
+                <button class="category-tab-btn" data-category="simsdress">Sims Dress</button>
+            </div>
 
-        <!-- Grad Gallery -->
-        <div class="category-gallery" id="gallery-grad">
-            <img src="Images/Grad/grad1.png" alt="Grad Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 4.png'">
-            <img src="Images/Grad/grad2.png" alt="Grad Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 5.png'">
-        </div>
+            <!-- Bridal Gallery -->
+            <div class="category-gallery active" id="gallery-bridal">
+                <img src="Images/Bridal/bridal1.png" alt="Bridal Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
+                <img src="Images/Bridal/bridal2.png" alt="Bridal Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 2.png'">
+                <img src="Images/Bridal/bridal3.png" alt="Bridal Gown 3" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 3.png'">
+            </div>
 
-        <!-- Sims Dress Gallery -->
-        <div class="category-gallery" id="gallery-simsdress">
-            <img src="Images/simsdress/sims1.png" alt="Sims Dress 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/VIKDS.png'">
-            <img src="Images/simsdress/sims2.png" alt="Sims Dress 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
+            <!-- Grad Gallery -->
+            <div class="category-gallery" id="gallery-grad">
+                <img src="Images/Grad/grad1.png" alt="Grad Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 4.png'">
+                <img src="Images/Grad/grad2.png" alt="Grad Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 5.png'">
+            </div>
+
+            <!-- Sims Dress Gallery -->
+            <div class="category-gallery" id="gallery-simsdress">
+                <img src="Images/simsdress/sims1.png" alt="Sims Dress 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/VIKDS.png'">
+                <img src="Images/simsdress/sims2.png" alt="Sims Dress 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
+            </div>
         </div>
     </section>
 
@@ -300,9 +310,9 @@
         <p>&copy; Unique by Vik Custom Dress Design. All rights reserved.</p>
     </footer>
 
-    <!-- Dynamic JavaScript for Carousel, Lightboxes & Categories -->
+    <!-- Dynamic JavaScript for Carousels, Portfolio Toggle, Lightboxes & Categories -->
     <script>
-        // 1. Process Carousel Navigation (Single Left Arrow Cycles Backward)
+        // 1. Process Carousel Navigation (Both Left and Right Arrows Working)
         const processSlides = document.querySelectorAll('.slide-display .carousel-img');
         const caption = document.getElementById('carousel-caption');
         let currentProcessIndex = 0;
@@ -316,15 +326,37 @@
         }
 
         const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
         if (prevBtn) {
             prevBtn.onclick = () => {
                 currentProcessIndex = (currentProcessIndex - 1 + processSlides.length) % processSlides.length;
                 showProcessSlide(currentProcessIndex);
             };
         }
+
+        if (nextBtn) {
+            nextBtn.onclick = () => {
+                currentProcessIndex = (currentProcessIndex + 1) % processSlides.length;
+                showProcessSlide(currentProcessIndex);
+            };
+        }
+
         if (processSlides.length > 0) showProcessSlide(0);
 
-        // 2. Category Tabs for Photo Library
+        // 2. Portfolio Reveal Toggle (Hidden until clicked)
+        const revealPortfolioBtn = document.getElementById('reveal-portfolio-btn');
+        const portfolioRevealWrapper = document.getElementById('portfolio-reveal-wrapper');
+        const portfolioContent = document.getElementById('portfolio-content');
+
+        if (revealPortfolioBtn && portfolioContent) {
+            revealPortfolioBtn.addEventListener('click', () => {
+                portfolioRevealWrapper.style.display = 'none';
+                portfolioContent.classList.add('open');
+            });
+        }
+
+        // 3. Category Tabs for Photo Library
         const tabBtns = document.querySelectorAll('.category-tab-btn');
         const galleries = document.querySelectorAll('.category-gallery');
 
@@ -339,7 +371,7 @@
             });
         });
 
-        // 3. Collapsible Packages Section
+        // 4. Collapsible Packages Section
         const togglePackagesBtn = document.getElementById('toggle-packages-btn');
         const packagesContent = document.getElementById('packages-content');
 
@@ -354,7 +386,7 @@
             });
         }
 
-        // 4. Separate Lightbox Modals for Hero, Process, and Categories
+        // 5. Separate Lightbox Modals for Hero, Process, and Categories
         const modal = document.getElementById('lightbox-modal');
         const modalImg = document.getElementById('lightbox-img');
         const modalCaption = document.getElementById('lightbox-caption');
@@ -417,7 +449,7 @@
             }
         });
 
-        // Touch swipe support
+        // Touch swipe support for Lightbox
         let touchStartX = 0;
         let touchEndX = 0;
         modal.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
