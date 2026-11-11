@@ -15,36 +15,34 @@
 </head>
 <body>
 
-    <!-- 1. MAIN IMAGE FIRST (Carousel Slides) -->
+    <!-- 1. MAIN HERO IMAGE -->
     <section class="card main-carousel-card">
         <div class="carousel">
-            <img src="Images/VIKDS.png" alt="Carousel Slide 1" class="carousel-img active lightbox-trigger">
+            <img src="Images/VIKDS.png" alt="Unique by Vik Gown" class="carousel-img active lightbox-hero">
         </div>
     </section>
 
     <!-- 2. UNIQUE BY VIK CUSTOM DRESS DESIGN & TEXT -->
     <header class="card header-card">
-        <!-- <img id="avatar" src="uniqueByVik.png" alt="Unique by Vik Logo"> -->
         <h1>Unique by Vik Custom Dress Design</h1>
         <p class="tagline">"In custom dress from Unique by Vik you will feel absolutely original, comfortable, precisely fitted and never repeated."</p>
         <p class="bio-text">Every design begins with a personal conversation, then develops through sketching, measurements, private fittings, and careful craftsmanship.</p>
         <p class="bio-text">Your gown should feel unmistakably yours. From the first idea to the final fitting, every decision is made with your body, your comfort, and your vision in mind.</p>
     </header>
 
-    <!-- 3. COUTURE PROCESS DIFFERENCE & IMAGES -->
+    <!-- 3. COUTURE PROCESS DIFFERENCE & IMAGES (Independent Loop) -->
     <section class="card">
         <h2 class="section-title">Couture process difference</h2>
         <div class="carousel">
             <button class="arrow" id="prev-btn" aria-label="Previous">&#10094;</button>
             <div class="slide-display">
-                <img src="Images/Slide 1.png" alt="Carousel Slide 1" class="carousel-img active lightbox-trigger">
-                <img src="Images/Slide 2.png" alt="Carousel Slide 2" class="carousel-img lightbox-trigger">
-                <img src="Images/Slide 3.png" alt="Carousel Slide 3" class="carousel-img lightbox-trigger">
-                <img src="Images/Slide 4.png" alt="Carousel Slide 4" class="carousel-img lightbox-trigger">
-                <img src="Images/Slide 5.png" alt="Carousel Slide 5" class="carousel-img lightbox-trigger">
+                <img src="Images/Slide 1.png" alt="Couture Sketching" class="carousel-img active lightbox-process">
+                <img src="Images/Slide 2.png" alt="Couture Measuring" class="carousel-img lightbox-process">
+                <img src="Images/Slide 3.png" alt="Couture Draping" class="carousel-img lightbox-process">
+                <img src="Images/Slide 4.png" alt="Couture Fitting" class="carousel-img lightbox-process">
+                <img src="Images/Slide 5.png" alt="Couture Finishing" class="carousel-img lightbox-process">
                 <p id="carousel-caption">Slide 1 of 5</p>
             </div>
-            <button class="arrow" id="next-btn" aria-label="Next">&#10095;</button>
         </div>
         <p class="section-subtitle">For the woman who refuses to wear an ordinary gown.</p>
     </section>
@@ -66,14 +64,14 @@
         </div>
     </section>
 
-    <!-- 6. TIMING AND TRAVEL -->
+    <!-- 5. TIMING AND TRAVEL -->
     <section class="card">
         <h2 class="section-title">Timing and Travel</h2>
         <p class="section-desc">Ideally, brides contact Unique by Vik <strong>6–12 months before their wedding</strong>. Earlier is welcome, and shorter-notice inquiries can still be discussed during the discovery call.</p>
         <p class="section-desc location-highlight">Based in Rosetown, Saskatchewan, serving customers across Canada, with travel arranged when needed.</p>
     </section>
 
-    <!-- 7. DISCOVERY CALL & STEP-BY-STEP PROCESS -->
+    <!-- 6. DISCOVERY CALL & STEP-BY-STEP PROCESS -->
     <section class="card">
         <h2 class="section-title">Your Custom Gown Design Process</h2>
         <p class="section-subtitle">From your first idea to a gown created especially for you</p>
@@ -99,7 +97,105 @@
         </div>
     </section>
 
-    <!-- 8 & 9. PRIVATE INFO FOR CONTACT & HOW YOU WANT TO KEEP IN TOUCH -->
+    <!-- 7. PHOTO LIBRARY WITH CATEGORIES (Bridal, Grad, simsdress) -->
+    <section class="card">
+        <h2 class="section-title">Design Photo Library</h2>
+        <p class="section-subtitle">Explore our previous custom creations by category</p>
+        
+        <div class="category-tabs">
+            <button class="category-tab-btn active" data-category="bridal">Bridal</button>
+            <button class="category-tab-btn" data-category="grad">Grad</button>
+            <button class="category-tab-btn" data-category="simsdress">Sims Dress</button>
+        </div>
+
+        <!-- Bridal Gallery -->
+        <div class="category-gallery active" id="gallery-bridal">
+            <img src="Images/Bridal/bridal1.png" alt="Bridal Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
+            <img src="Images/Bridal/bridal2.png" alt="Bridal Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 2.png'">
+            <img src="Images/Bridal/bridal3.png" alt="Bridal Gown 3" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 3.png'">
+        </div>
+
+        <!-- Grad Gallery -->
+        <div class="category-gallery" id="gallery-grad">
+            <img src="Images/Grad/grad1.png" alt="Grad Gown 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 4.png'">
+            <img src="Images/Grad/grad2.png" alt="Grad Gown 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 5.png'">
+        </div>
+
+        <!-- Sims Dress Gallery -->
+        <div class="category-gallery" id="gallery-simsdress">
+            <img src="Images/simsdress/sims1.png" alt="Sims Dress 1" class="gallery-card-img lightbox-category" onerror="this.src='Images/VIKDS.png'">
+            <img src="Images/simsdress/sims2.png" alt="Sims Dress 2" class="gallery-card-img lightbox-category" onerror="this.src='Images/Slide 1.png'">
+        </div>
+    </section>
+
+    <!-- 8. PACKAGES SECTION (Collapsible with Toggle Button) -->
+    <section class="card" id="packages-section">
+        <h2 class="section-title">Pricing & Packages</h2>
+        <p class="section-desc" style="text-align: center;">Choose the bridal or formal experience that feels right for you.</p>
+        
+        <div class="packages-toggle-wrapper">
+            <button class="btn-toggle-packages" id="toggle-packages-btn">View Pricing Packages</button>
+        </div>
+
+        <div class="packages-collapsible-content" id="packages-content">
+            <p class="price-disclaimer" style="margin-top: 1.5rem;">* All prices are approximated, overage and more accurate price will be calculated individually.</p>
+            
+            <div class="packages-grid-3col">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <h3>Package 1</h3>
+                    <span class="package-subtitle">A Gown Dress, Just As You Want</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Designed back or front, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>BONUS: Custom designed veil</li>
+                    </ul>
+                    <div class="package-price"><strong>$6,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 1</a>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card popular-package">
+                    <h3>Package 2</h3>
+                    <span class="package-subtitle">Complete Bridal Everything You Need</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Neck collar style or bustier, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>Custom designed veil</li>
+                        <li>Bridal gown or coat</li>
+                        <li>Flower crown or gloves</li>
+                        <li>BONUS: Flower-girl dress</li>
+                    </ul>
+                    <div class="package-price"><strong>$12,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 2</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <h3>Package 3</h3>
+                    <span class="package-subtitle">All Inclusive: All Bride Suit Dresses</span>
+                    <ul class="package-features">
+                        <li>Wedding dress</li>
+                        <li>Corset/mesh back or bustier, depending on the design</li>
+                        <li>Historical or period skirt, depending on the design</li>
+                        <li>Custom designed veil</li>
+                        <li>Bridal gown or coat</li>
+                        <li>Flower crown or gloves</li>
+                        <li>Historical dress or cape</li>
+                        <li>Ties or historical belts</li>
+                        <li>Boleros or faux fur cape</li>
+                        <li>Woman of the groom dress</li>
+                    </ul>
+                    <div class="package-price"><strong>$20,000 CAD</strong> approx</div>
+                    <a href="#inquiry-section" class="btn-package">Choose Package 3</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. INQUIRY FORM -->
     <section class="card" id="inquiry-section">
         <h2 class="section-title">Begin your private gown conversation.</h2>
         <p class="section-desc">Each inquiry is reviewed personally. Share a few details about your occasion and vision so the conversation can begin with care and clarity.</p>
@@ -135,7 +231,6 @@
                 <textarea name="gown_description" rows="3" placeholder="Brief description of the gown desired..."></textarea>
             </div>
             
-            <!-- How you want to keep in touch -->
             <div class="form-group">
                 <label for="preferred_contact">How do you want to keep in touch after inquiry?</label>
                 <select id="preferred_contact" name="preferred_contact" required>
@@ -155,70 +250,11 @@
                 <textarea name="additional_info" rows="3" placeholder="Additional info or notes..."></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Submit Gown Inquiry</button>
+            <button type="submit" class="btn-submit">Book today</button>
         </form>
     </section>
 
-    <!-- 5. 3 COLUMNS OF PACKAGES / OCCASIONS & APPROXIMATED PRICES -->
-    <section class="card" id="packages-section">
-        <h2 class="section-title">Choose the bridal experience that feels right for you.</h2>
-        <p class="price-disclaimer">* All prices are approximated, overage and more accurate price will be calculated individually.</p>
-        
-        <div class="packages-grid-3col">
-            <!-- Package 1 -->
-            <div class="package-card">
-                <h3>Package 1</h3>
-                <span class="package-subtitle">A Gown Dress, Just As You Want</span>
-                <ul class="package-features">
-                    <li>Wedding dress</li>
-                    <li>Designed back or front, depending on the design</li>
-                    <li>Historical or period skirt, depending on the design</li>
-                    <li>BONUS: Custom designed veil</li>
-                </ul>
-                <div class="package-price"><strong>$6,000 CAD</strong> approx</div>
-                <a href="#inquiry-section" class="btn-package">Choose Package 1</a>
-            </div>
-
-            <!-- Package 2 -->
-            <div class="package-card popular-package">
-                <h3>Package 2</h3>
-                <span class="package-subtitle">Complete Bridal Everything You Need</span>
-                <ul class="package-features">
-                    <li>Wedding dress</li>
-                    <li>Neck collar style or bustier, depending on the design</li>
-                    <li>Historical or period skirt, depending on the design</li>
-                    <li>Custom designed veil</li>
-                    <li>Bridal gown or coat</li>
-                    <li>Flower crown or gloves</li>
-                    <li>BONUS: Flower-girl dress</li>
-                </ul>
-                <div class="package-price"><strong>$12,000 CAD</strong> approx</div>
-                <a href="#inquiry-section" class="btn-package">Choose Package 2</a>
-            </div>
-
-            <!-- Package 3 -->
-            <div class="package-card">
-                <h3>Package 3</h3>
-                <span class="package-subtitle">All Inclusive: All Bride Suit Dresses</span>
-                <ul class="package-features">
-                    <li>Wedding dress</li>
-                    <li>Corset/mesh back or bustier, depending on the design</li>
-                    <li>Historical or period skirt, depending on the design</li>
-                    <li>Custom designed veil</li>
-                    <li>Bridal gown or coat</li>
-                    <li>Flower crown or gloves</li>
-                    <li>Historical dress or cape</li>
-                    <li>Ties or historical belts</li>
-                    <li>Boleros or faux fur cape</li>
-                    <li>Woman of the groom dress</li>
-                </ul>
-                <div class="package-price"><strong>$20,000 CAD</strong> approx</div>
-                <a href="#inquiry-section" class="btn-package">Choose Package 3</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT & RECOGNITION -->
+    <!-- 10. CONTACT & RECOGNITION -->
     <section class="card">
         <div class="contact-info-block">
             <p><strong>Unique by Vik Custom Dress Design</strong></p>
@@ -227,10 +263,9 @@
             <p>Email: <a href="mailto:uniquebyvik.designer@gmail.com">uniquebyvik.designer@gmail.com</a></p>
             <p>Phone: <a href="tel:13066179069">1-306-617-9069</a></p>
         </div>
-
     </section>
 
-    <!-- 10. SOCIAL LINKS IN A SINGLE ROW BOX -->
+    <!-- 11. SOCIAL LINKS -->
     <section class="card socials-box">
         <h3 class="socials-title">Socials</h3>
         <div class="socials-row">
@@ -265,56 +300,94 @@
         <p>&copy; Unique by Vik Custom Dress Design. All rights reserved.</p>
     </footer>
 
-    <!-- Dynamic JavaScript for Carousel & Fullscreen Lightbox -->
+    <!-- Dynamic JavaScript for Carousel, Lightboxes & Categories -->
     <script>
-        // Carousel Navigation
-        const slides = document.querySelectorAll('.slide-display .carousel-img');
+        // 1. Process Carousel Navigation (Single Left Arrow Cycles Backward)
+        const processSlides = document.querySelectorAll('.slide-display .carousel-img');
         const caption = document.getElementById('carousel-caption');
-        let currentIndex = 0;
+        let currentProcessIndex = 0;
 
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            if (slides[index]) {
-                slides[index].classList.add('active');
-                caption.textContent = `Slide ${index + 1} of ${slides.length}`;
+        function showProcessSlide(index) {
+            processSlides.forEach(slide => slide.classList.remove('active'));
+            if (processSlides[index]) {
+                processSlides[index].classList.add('active');
+                if(caption) caption.textContent = `Slide ${index + 1} of ${processSlides.length}`;
             }
         }
 
-        document.getElementById('prev-btn').onclick = () => {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        };
-
-        document.getElementById('next-btn').onclick = () => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        };
-
-        if (slides.length > 0) {
-            showSlide(0);
+        const prevBtn = document.getElementById('prev-btn');
+        if (prevBtn) {
+            prevBtn.onclick = () => {
+                currentProcessIndex = (currentProcessIndex - 1 + processSlides.length) % processSlides.length;
+                showProcessSlide(currentProcessIndex);
+            };
         }
+        if (processSlides.length > 0) showProcessSlide(0);
 
-        // Fullscreen Lightbox & Swipe functionality
-        const modal = document.getElementById('lightbox-modal');
-        const modalImg = document.getElementById('lightbox-img');
-        const modalCaption = document.getElementById('lightbox-caption');
-        const triggers = document.querySelectorAll('.lightbox-trigger');
-        let lightboxIndex = 0;
-        let touchStartX = 0;
-        let touchEndX = 0;
+        // 2. Category Tabs for Photo Library
+        const tabBtns = document.querySelectorAll('.category-tab-btn');
+        const galleries = document.querySelectorAll('.category-gallery');
 
-        triggers.forEach((img, idx) => {
-            img.addEventListener('click', () => {
-                modal.classList.add('active');
-                lightboxIndex = idx;
-                updateLightboxImage();
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                galleries.forEach(g => g.classList.remove('active'));
+                
+                btn.classList.add('active');
+                const targetGallery = document.getElementById(`gallery-${btn.dataset.category}`);
+                if (targetGallery) targetGallery.classList.add('active');
             });
         });
 
+        // 3. Collapsible Packages Section
+        const togglePackagesBtn = document.getElementById('toggle-packages-btn');
+        const packagesContent = document.getElementById('packages-content');
+
+        if(togglePackagesBtn && packagesContent) {
+            togglePackagesBtn.addEventListener('click', () => {
+                packagesContent.classList.toggle('open');
+                if (packagesContent.classList.contains('open')) {
+                    togglePackagesBtn.textContent = 'Close Pricing Packages';
+                } else {
+                    togglePackagesBtn.textContent = 'View Pricing Packages';
+                }
+            });
+        }
+
+        // 4. Separate Lightbox Modals for Hero, Process, and Categories
+        const modal = document.getElementById('lightbox-modal');
+        const modalImg = document.getElementById('lightbox-img');
+        const modalCaption = document.getElementById('lightbox-caption');
+        
+        let activeTriggerGroup = [];
+        let lightboxIndex = 0;
+
+        function setupLightboxTriggers(selector, groupArray) {
+            const items = document.querySelectorAll(selector);
+            items.forEach((img, idx) => {
+                img.addEventListener('click', () => {
+                    activeTriggerGroup = groupArray;
+                    lightboxIndex = idx;
+                    modal.classList.add('active');
+                    updateLightboxImage();
+                });
+            });
+        }
+
+        const heroTriggers = document.querySelectorAll('.lightbox-hero');
+        const processTriggers = document.querySelectorAll('.lightbox-process');
+        const categoryTriggers = document.querySelectorAll('.lightbox-category');
+
+        setupLightboxTriggers('.lightbox-hero', heroTriggers);
+        setupLightboxTriggers('.lightbox-process', processTriggers);
+        setupLightboxTriggers('.lightbox-category', categoryTriggers);
+
         function updateLightboxImage() {
-            const currentTrigger = triggers[lightboxIndex];
-            modalImg.src = currentTrigger.src;
-            modalCaption.textContent = currentTrigger.alt || `Image ${lightboxIndex + 1} of ${triggers.length}`;
+            if(activeTriggerGroup.length > 0 && activeTriggerGroup[lightboxIndex]) {
+                const currentImg = activeTriggerGroup[lightboxIndex];
+                modalImg.src = currentImg.src;
+                modalCaption.textContent = currentImg.alt || `View ${lightboxIndex + 1}`;
+            }
         }
 
         document.querySelector('.lightbox-close').addEventListener('click', () => {
@@ -322,8 +395,10 @@
         });
 
         function navigateLightbox(dir) {
-            lightboxIndex = (lightboxIndex + dir + triggers.length) % triggers.length;
-            updateLightboxImage();
+            if(activeTriggerGroup.length > 0) {
+                lightboxIndex = (lightboxIndex + dir + activeTriggerGroup.length) % activeTriggerGroup.length;
+                updateLightboxImage();
+            }
         }
 
         document.querySelector('.lightbox-prev').addEventListener('click', (e) => {
@@ -342,15 +417,14 @@
             }
         });
 
-        // Touch gesture / Swipe support for mobile & tablet
-        modal.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
-
+        // Touch swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        modal.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
         modal.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 40) navigateLightbox(1);  // Swipe left
-            if (touchEndX - touchStartX > 40) navigateLightbox(-1); // Swipe right
+            if (touchStartX - touchEndX > 40) navigateLightbox(1);
+            if (touchEndX - touchStartX > 40) navigateLightbox(-1);
         }, { passive: true });
     </script>
 </body>
